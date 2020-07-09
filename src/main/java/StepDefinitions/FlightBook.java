@@ -24,20 +24,18 @@ public class FlightBook  {
         System.setProperty("webdriver.chrome.driver" ,"Drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(url);
-        System.out.println("A new line added for test");
     }
 
     @Given("^I select Flight Tab$")
     public void i_select_Flight_Tab() throws Throwable {
        flightbookpage =new FlighBookingPage(driver);
        flightbookpage.SelectTab();
-        System.out.println("A new line added for test");
+
     }
 
     @Given("^I select multicity option$")
     public void i_select_multicity_option() throws Throwable {
         flightbookpage.SelectMulticity();
-        System.out.println("A new line added for test");
     }
 
 
