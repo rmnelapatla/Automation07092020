@@ -96,6 +96,7 @@ public FlighBookingPage(WebDriver driver){
     public void SelectMulticity(){
         lbl_multicity.click();
         lnk_addflight.click();
+        System.out.println("test");
 
     }
 
